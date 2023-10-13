@@ -34,15 +34,13 @@ function render(variables = {}) {
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
           <h1>
-          ${variables.name == null ? "Jose" : variables.name} 
-          ${variables.lastname == null ? "María Rodríguez" : variables.lastname}
+          ${variables.name == null ? "Name" : variables.name} 
+          ${variables.lastname == null ? "Last Name" : variables.lastname}
           </h1>
-          <h2>${
-            variables.role == null ? "Full stack Developer" : variables.role
-          }</h2>
+          <h2>${variables.role == null ? "Role" : variables.role}</h2>
           <h3>
           ${variables.city == null ? "City" : variables.city},
-          ${variables.country == null ? "COUNTRY" : variables.country}
+          ${variables.country == null ? "Country" : variables.country}
           </h3>
           <ul class="position-right">
             <li><a href="https://twitter.com/${
@@ -63,7 +61,7 @@ function render(variables = {}) {
                 ? "4geeksacademy"
                 : variables.instagram
             }"><i class="fab fa-instagram"></i></a></li>
-          </ul>
+           </ul>
         </div>
     `;
 }
